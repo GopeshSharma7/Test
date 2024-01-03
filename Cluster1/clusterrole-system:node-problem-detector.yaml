@@ -3,11 +3,11 @@ kind: ClusterRole
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   labels:
     kubernetes.io/bootstrapping: rbac-defaults
   name: system:node-problem-detector
-  uid: 5941f093-d67c-4565-8afa-385317ff0ba9
+  uid: 41b831b9-d080-4f32-98cf-39cb278728a0
 rules:
 - apiGroups:
   - ""
