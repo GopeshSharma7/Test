@@ -177,7 +177,7 @@ status:
     state:
       running:
         startedAt: "2023-12-21T13:01:46Z"
-  - containerID: docker://061705a4e367924c7fa1e42839da7a913c897d1335c707f88521369b751c3b70
+  - containerID: docker://24f1d64306fbe1b3e2895b03d0838b6bd74be3ae5fa4a35df843cdaec66698d8
     image: trohit7/controller:latest2
     imageID: docker-pullable://trohit7/controller@sha256:1c2931749ce9ab34e8791b80b293da03ffd5a73e24d1ba97b4e00ac95bd63141
     lastState:
@@ -189,12 +189,11 @@ status:
         startedAt: "2024-01-03T06:04:18Z"
     name: manager
     ready: false
-    restartCount: 931
-    started: false
+    restartCount: 932
+    started: true
     state:
-      waiting:
-        message: back-off 5m0s restarting failed container=manager pod=crdstesting-controller-manager-595f599f59-8xm25_crdstesting-system(116ed313-6135-4d65-80db-764194f2e9ac)
-        reason: CrashLoopBackOff
+      running:
+        startedAt: "2024-01-03T06:11:45Z"
   hostIP: 192.168.49.2
   phase: Running
   podIP: 10.244.1.228
