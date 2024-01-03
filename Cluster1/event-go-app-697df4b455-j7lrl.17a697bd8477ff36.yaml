@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:49Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: go-app-697df4b455-j7lrl.17a697bd8477ff36
+  namespace: default
+  uid: 1febfe6d-c2e1-4b41-bf19-b54b66e2458c
+note: Created container go-app
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{go-app}
+  kind: Pod
+  name: go-app-697df4b455-j7lrl
+  namespace: default
+  resourceVersion: "1171934"
+  uid: c66b1aaa-d693-4cc3-b940-8a7a7a58da31
+type: Normal

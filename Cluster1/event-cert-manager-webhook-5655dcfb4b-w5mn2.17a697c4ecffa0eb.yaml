@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:26:21Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:30Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:26:21Z"
+  name: cert-manager-webhook-5655dcfb4b-w5mn2.17a697c4ecffa0eb
+  namespace: cert-manager
+  uid: 5143e4a8-b761-4887-9da4-c2462adc111c
+note: Back-off restarting failed container cert-manager-webhook in pod cert-manager-webhook-5655dcfb4b-w5mn2_cert-manager(ddcad1b0-18e1-484a-bedb-cf9abdfc5b90)
+reason: BackOff
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{cert-manager-webhook}
+  kind: Pod
+  name: cert-manager-webhook-5655dcfb4b-w5mn2
+  namespace: cert-manager
+  resourceVersion: "1172240"
+  uid: ddcad1b0-18e1-484a-bedb-cf9abdfc5b90
+type: Warning

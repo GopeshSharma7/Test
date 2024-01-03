@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:50Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:50Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:50Z"
+  name: calico-kube-controllers-85578c44bf-cm6kg.17a697bdbffb823b
+  namespace: kube-system
+  uid: 23857604-ea7a-46e8-ae2e-4f62a2c2f188
+note: Container image "docker.io/calico/kube-controllers:v3.26.1" already present
+  on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{calico-kube-controllers}
+  kind: Pod
+  name: calico-kube-controllers-85578c44bf-cm6kg
+  namespace: kube-system
+  resourceVersion: "1172080"
+  uid: 0f1654c2-63ea-4a9b-8947-f6e947666153
+type: Normal

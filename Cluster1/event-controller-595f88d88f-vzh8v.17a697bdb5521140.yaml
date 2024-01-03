@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:50Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:38Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:50Z"
+  name: controller-595f88d88f-vzh8v.17a697bdb5521140
+  namespace: metallb-system
+  uid: 63f3d4f7-0e29-486d-b1af-748b02a1d55a
+note: Created container controller
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{controller}
+  kind: Pod
+  name: controller-595f88d88f-vzh8v
+  namespace: metallb-system
+  resourceVersion: "1172391"
+  uid: ba0eb06a-abf9-4545-b945-8959f7317a30
+type: Normal

@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:49Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: kube-backups-katafygio-6fb6f8dd4-jw2qk.17a697bd9dace545
+  namespace: default
+  uid: 68daab1b-c243-47a6-9eff-b00d407c911b
+note: Container image "bpineau/katafygio:v0.8.3" already present on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{katafygio}
+  kind: Pod
+  name: kube-backups-katafygio-6fb6f8dd4-jw2qk
+  namespace: default
+  resourceVersion: "1171943"
+  uid: 377a9620-90fa-4ba0-8a1d-a59d4396826b
+type: Normal

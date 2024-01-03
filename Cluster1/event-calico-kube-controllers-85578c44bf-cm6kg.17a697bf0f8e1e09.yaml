@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 4
+deprecatedFirstTimestamp: "2024-01-02T17:25:55Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:15Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:55Z"
+  name: calico-kube-controllers-85578c44bf-cm6kg.17a697bf0f8e1e09
+  namespace: kube-system
+  uid: a2a4ba41-e821-4b24-a07f-0284f5df1f10
+note: |
+  Readiness probe failed: initialized to false
+reason: Unhealthy
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{calico-kube-controllers}
+  kind: Pod
+  name: calico-kube-controllers-85578c44bf-cm6kg
+  namespace: kube-system
+  resourceVersion: "1172080"
+  uid: 0f1654c2-63ea-4a9b-8947-f6e947666153
+type: Warning

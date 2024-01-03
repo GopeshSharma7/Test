@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:33Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: cert-manager-cainjector-bdd866bd4-wmj9t.17a697bdaef943b4
+  namespace: cert-manager
+  uid: 7ea16d75-3593-40b3-93c9-2babef9b90e3
+note: Container image "quay.io/jetstack/cert-manager-cainjector:v1.12.0" already present
+  on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{cert-manager-cainjector}
+  kind: Pod
+  name: cert-manager-cainjector-bdd866bd4-wmj9t
+  namespace: cert-manager
+  resourceVersion: "1172327"
+  uid: ea922760-7490-4dad-a5d9-9d8ca37e7685
+type: Normal

@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:48Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:48Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: storage-provisioner.17a697bd4456bdfd
+  namespace: kube-system
+  uid: 22cd854b-2808-4e28-a5d0-90b697a65eee
+note: Pod sandbox changed, it will be killed and re-created.
+reason: SandboxChanged
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: storage-provisioner
+  namespace: kube-system
+  resourceVersion: "1172096"
+  uid: b8752c01-94b9-43ef-ba2a-e0ffc8a001a1
+type: Normal

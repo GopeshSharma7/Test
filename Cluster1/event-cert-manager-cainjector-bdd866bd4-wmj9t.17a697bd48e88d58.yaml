@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:48Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:48Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: cert-manager-cainjector-bdd866bd4-wmj9t.17a697bd48e88d58
+  namespace: cert-manager
+  uid: 760e3b54-027b-426b-a35f-079c88db223c
+note: Pod sandbox changed, it will be killed and re-created.
+reason: SandboxChanged
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: cert-manager-cainjector-bdd866bd4-wmj9t
+  namespace: cert-manager
+  resourceVersion: "1172327"
+  uid: ea922760-7490-4dad-a5d9-9d8ca37e7685
+type: Normal

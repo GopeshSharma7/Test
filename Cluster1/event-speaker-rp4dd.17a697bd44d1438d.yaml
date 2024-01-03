@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:48Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:48Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: speaker-rp4dd.17a697bd44d1438d
+  namespace: metallb-system
+  uid: 3f275ece-5bd2-4f0c-881a-b45b7bfc42d6
+note: Pod sandbox changed, it will be killed and re-created.
+reason: SandboxChanged
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: speaker-rp4dd
+  namespace: metallb-system
+  resourceVersion: "1172421"
+  uid: 76c502b4-4bfc-4838-aa8a-35cff23c33e5
+type: Normal

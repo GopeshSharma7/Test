@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:26:20Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:20Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:26:20Z"
+  name: calico-kube-controllers-85578c44bf-cm6kg.17a697c4e3d6b011
+  namespace: kube-system
+  uid: 105a9601-51e4-44c7-a12b-2d2b6c8f621c
+note: |
+  Liveness probe failed: Error initializing datastore: Get "https://10.96.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default": dial tcp 10.96.0.1:443: i/o timeout
+reason: Unhealthy
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{calico-kube-controllers}
+  kind: Pod
+  name: calico-kube-controllers-85578c44bf-cm6kg
+  namespace: kube-system
+  resourceVersion: "1172080"
+  uid: 0f1654c2-63ea-4a9b-8947-f6e947666153
+type: Warning

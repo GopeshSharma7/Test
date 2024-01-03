@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:53Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:53Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:53Z"
+  name: calico-node-tdncx.17a697be88c7823a
+  namespace: kube-system
+  uid: 8f3e21e7-3d86-473c-a842-1ecee85133f1
+note: Created container mount-bpffs
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.initContainers{mount-bpffs}
+  kind: Pod
+  name: calico-node-tdncx
+  namespace: kube-system
+  resourceVersion: "1172043"
+  uid: 5f40c6a5-9fb4-4214-ace2-2e8e84832da4
+type: Normal

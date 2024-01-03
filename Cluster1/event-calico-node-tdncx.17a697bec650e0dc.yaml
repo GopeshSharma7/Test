@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:54Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:54Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:54Z"
+  name: calico-node-tdncx.17a697bec650e0dc
+  namespace: kube-system
+  uid: 6a11e6ff-dbc1-472a-b685-f22754dd6bf4
+note: Created container calico-node
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{calico-node}
+  kind: Pod
+  name: calico-node-tdncx
+  namespace: kube-system
+  resourceVersion: "1172043"
+  uid: 5f40c6a5-9fb4-4214-ace2-2e8e84832da4
+type: Normal

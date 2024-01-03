@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:48Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:48Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: niginx.17a697bd482e8a34
+  namespace: default
+  uid: a8197470-58aa-4645-9a61-a9d76b2d280d
+note: Pod sandbox changed, it will be killed and re-created.
+reason: SandboxChanged
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: niginx
+  namespace: default
+  resourceVersion: "1171939"
+  uid: dc7bc6c4-ab93-41e3-8e16-6c57c985f904
+type: Normal

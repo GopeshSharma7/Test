@@ -1,0 +1,23 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:26:44Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:44Z"
+deprecatedSource:
+  component: cert-manager-leader-election
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:26:44Z"
+  name: cert-manager-controller.17a697ca7c074ec1
+  namespace: kube-system
+  uid: 404e0630-aba0-4a1a-a47c-2bc909b2bcad
+note: cert-manager-7476c8fcf4-fzmh5-external-cert-manager-controller became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cert-manager-controller
+  namespace: kube-system
+  resourceVersion: "1195028"
+  uid: a0122e1b-2f0c-46bc-a732-0a157008771f
+type: Normal

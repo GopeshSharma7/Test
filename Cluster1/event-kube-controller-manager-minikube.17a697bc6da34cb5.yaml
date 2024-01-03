@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:44Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:44Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: kube-controller-manager-minikube.17a697bc6da34cb5
+  namespace: kube-system
+  uid: 3233eb75-03ff-407c-ab18-2cee76872327
+note: Created container kube-controller-manager
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-controller-manager}
+  kind: Pod
+  name: kube-controller-manager-minikube
+  namespace: kube-system
+  uid: b3702ceb912504d37098b922ccdcfa41
+type: Normal

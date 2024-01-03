@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:38Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:50Z"
+  name: controller-595f88d88f-vzh8v.17a697bdafe11fd3
+  namespace: metallb-system
+  uid: a37b4e51-75f4-47c4-bb9e-5165a36350d6
+note: Container image "quay.io/metallb/controller:v0.13.10" already present on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{controller}
+  kind: Pod
+  name: controller-595f88d88f-vzh8v
+  namespace: metallb-system
+  resourceVersion: "1172391"
+  uid: ba0eb06a-abf9-4545-b945-8959f7317a30
+type: Normal

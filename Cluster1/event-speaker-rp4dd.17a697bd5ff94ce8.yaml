@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:48Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:34Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: speaker-rp4dd.17a697bd5ff94ce8
+  namespace: metallb-system
+  uid: 909e884c-8a29-48b4-8e21-cfb64e404506
+note: Container image "quay.io/metallb/speaker:v0.13.10" already present on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{speaker}
+  kind: Pod
+  name: speaker-rp4dd
+  namespace: metallb-system
+  resourceVersion: "1172421"
+  uid: 76c502b4-4bfc-4838-aa8a-35cff23c33e5
+type: Normal

@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:44Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:44Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:48Z"
+  name: etcd-minikube.17a697bc6b5dc985
+  namespace: kube-system
+  uid: 1369a0ed-3832-48ff-b928-2eab4717c609
+note: Created container etcd
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{etcd}
+  kind: Pod
+  name: etcd-minikube
+  namespace: kube-system
+  uid: 8af0e85a28544808d52bb7c47ad824ed
+type: Normal

@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:50Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:33Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:50Z"
+  name: cert-manager-cainjector-bdd866bd4-wmj9t.17a697bdb50a9b78
+  namespace: cert-manager
+  uid: 4371f1aa-6211-429d-9652-1f16f27410e1
+note: Created container cert-manager-cainjector
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{cert-manager-cainjector}
+  kind: Pod
+  name: cert-manager-cainjector-bdd866bd4-wmj9t
+  namespace: cert-manager
+  resourceVersion: "1172327"
+  uid: ea922760-7490-4dad-a5d9-9d8ca37e7685
+type: Normal

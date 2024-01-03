@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:44Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: cert-manager-webhook-5655dcfb4b-w5mn2.17a697bdaee08006
+  namespace: cert-manager
+  uid: 70584080-83b7-4b0c-866f-3c88d6d393c5
+note: Container image "quay.io/jetstack/cert-manager-webhook:v1.12.0" already present
+  on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{cert-manager-webhook}
+  kind: Pod
+  name: cert-manager-webhook-5655dcfb4b-w5mn2
+  namespace: cert-manager
+  resourceVersion: "1172240"
+  uid: ddcad1b0-18e1-484a-bedb-cf9abdfc5b90
+type: Normal

@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:49Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: calico-node-tdncx.17a697bd915f80a4
+  namespace: kube-system
+  uid: 9c541c7e-6e0f-4d9e-819d-a415bbbc7341
+note: Created container upgrade-ipam
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.initContainers{upgrade-ipam}
+  kind: Pod
+  name: calico-node-tdncx
+  namespace: kube-system
+  resourceVersion: "1172043"
+  uid: 5f40c6a5-9fb4-4214-ace2-2e8e84832da4
+type: Normal

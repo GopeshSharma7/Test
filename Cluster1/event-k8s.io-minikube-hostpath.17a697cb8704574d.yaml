@@ -1,0 +1,23 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:26:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:49Z"
+deprecatedSource:
+  component: k8s.io/minikube-hostpath_minikube_e116bcae-c569-4301-8725-68f2ab0b9654
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:26:49Z"
+  name: k8s.io-minikube-hostpath.17a697cb8704574d
+  namespace: kube-system
+  uid: 472fc58f-7f75-4cd5-a056-0cd4547d5f6a
+note: minikube_e116bcae-c569-4301-8725-68f2ab0b9654 became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: Endpoints
+  name: k8s.io-minikube-hostpath
+  namespace: kube-system
+  resourceVersion: "1195038"
+  uid: 3296efa7-ebce-4ae4-b89c-76d81c8e7b53
+type: Normal

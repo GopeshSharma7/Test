@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 2
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:26:31Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: storage-provisioner.17a697bd7f24b70c
+  namespace: kube-system
+  uid: 8ed0261b-e2de-4ce0-90db-e3d91ffe2d51
+note: Started container storage-provisioner
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{storage-provisioner}
+  kind: Pod
+  name: storage-provisioner
+  namespace: kube-system
+  resourceVersion: "1172096"
+  uid: b8752c01-94b9-43ef-ba2a-e0ffc8a001a1
+type: Normal

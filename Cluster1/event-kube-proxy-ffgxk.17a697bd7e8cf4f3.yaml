@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-02T17:25:49Z"
+deprecatedLastTimestamp: "2024-01-02T17:25:49Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-02T17:25:49Z"
+  name: kube-proxy-ffgxk.17a697bd7e8cf4f3
+  namespace: kube-system
+  uid: 46f4a1ba-917d-45af-ad88-cbc4db68893e
+note: Container image "registry.k8s.io/kube-proxy:v1.27.4" already present on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-proxy}
+  kind: Pod
+  name: kube-proxy-ffgxk
+  namespace: kube-system
+  resourceVersion: "1171927"
+  uid: 70b17335-bdf5-41fd-aa8f-9ac210c05a1c
+type: Normal
