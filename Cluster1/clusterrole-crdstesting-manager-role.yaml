@@ -1,0 +1,36 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"ClusterRole","metadata":{"annotations":{},"name":"crdstesting-manager-role"},"rules":[{"apiGroups":["demo.demo.kcd.io"],"resources":["demoresources"],"verbs":["create","delete","get","list","patch","update","watch"]},{"apiGroups":["demo.demo.kcd.io"],"resources":["demoresources/finalizers"],"verbs":["update"]},{"apiGroups":["demo.demo.kcd.io"],"resources":["demoresources/status"],"verbs":["get","patch","update"]}]}
+  creationTimestamp: "2023-11-30T06:21:47Z"
+  name: crdstesting-manager-role
+  uid: 767b92f8-6512-4f86-a3ca-4037fd16fe0d
+rules:
+- apiGroups:
+  - demo.demo.kcd.io
+  resources:
+  - demoresources
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - demo.demo.kcd.io
+  resources:
+  - demoresources/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - demo.demo.kcd.io
+  resources:
+  - demoresources/status
+  verbs:
+  - get
+  - patch
+  - update

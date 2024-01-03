@@ -3,9 +3,9 @@ kind: PriorityLevelConfiguration
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: exempt
-  uid: 50459ec5-f3be-44c6-96ab-ec208b5a64dc
+  uid: b5029ef0-6bfa-4219-8f8b-50083d9dcb05
 spec:
   type: Exempt
 status: {}

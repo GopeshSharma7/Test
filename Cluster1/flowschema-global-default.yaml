@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: global-default
-  uid: ce9c3cf7-bf6d-455b-a71c-b7fa9524df63
+  uid: 7d74967f-da48-4994-80cc-54c44f02b62f
 spec:
   distinguisherMethod:
     type: ByUser
@@ -37,7 +37,7 @@ spec:
       kind: Group
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "global-default" and it exists
     reason: Found

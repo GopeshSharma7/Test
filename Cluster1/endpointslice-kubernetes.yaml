@@ -7,12 +7,12 @@ endpoints:
     ready: true
 kind: EndpointSlice
 metadata:
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     kubernetes.io/service-name: kubernetes
   name: kubernetes
   namespace: default
-  uid: 12e7a3c2-b312-4179-931f-999851617add
+  uid: b5e23c2c-564f-4286-bf8b-e2cd2040b4a9
 ports:
 - name: https
   port: 8443

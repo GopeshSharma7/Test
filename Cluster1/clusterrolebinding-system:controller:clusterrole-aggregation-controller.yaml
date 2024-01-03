@@ -3,11 +3,11 @@ kind: ClusterRoleBinding
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     kubernetes.io/bootstrapping: rbac-defaults
   name: system:controller:clusterrole-aggregation-controller
-  uid: 0cd7c285-e7b2-46fc-aadb-dbe9970a7a59
+  uid: 571741d1-a4f8-4099-b7e8-9d820bde0c17
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

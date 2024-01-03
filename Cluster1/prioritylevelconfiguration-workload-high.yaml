@@ -3,9 +3,9 @@ kind: PriorityLevelConfiguration
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:14Z"
   name: workload-high
-  uid: 4ed81e1c-a574-4d7d-8b3c-e6eec4e2c9a9
+  uid: 341fb2aa-988b-440d-98a9-df9c88fe11b7
 spec:
   limited:
     assuredConcurrencyShares: 40

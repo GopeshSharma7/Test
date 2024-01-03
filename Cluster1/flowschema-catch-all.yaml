@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: catch-all
-  uid: 7aabdd82-c44f-476b-bc43-82dbbc08136b
+  uid: fe0b7a8b-2aa2-481d-9d09-8799db26a808
 spec:
   distinguisherMethod:
     type: ByUser
@@ -37,7 +37,7 @@ spec:
       kind: Group
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "catch-all" and it exists
     reason: Found

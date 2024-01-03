@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     component: apiserver
     provider: kubernetes
   name: kubernetes
   namespace: default
-  uid: fe254319-9d8f-4a69-9a63-89a058bb4d1a
+  uid: e663ef13-f102-46e1-8352-053cc5824a77
 spec:
   clusterIP: 10.96.0.1
   clusterIPs:

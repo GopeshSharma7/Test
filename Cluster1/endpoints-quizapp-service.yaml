@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  creationTimestamp: "2023-11-29T10:42:04Z"
+  name: quizapp-service
+  namespace: default
+  uid: 8cb3b96a-de89-4355-9f83-a742066f9513
+subsets:
+- addresses:
+  - ip: 10.244.1.230
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: quizapp-deployment-567b8b576d-n4jp9
+      namespace: default
+      uid: b8b0ed13-d410-4b7c-bb22-fb5113f7402b
+  ports:
+  - port: 80
+    protocol: TCP

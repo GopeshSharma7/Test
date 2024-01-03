@@ -5,9 +5,9 @@ metadata:
     kubeadm.kubernetes.io/kube-apiserver.advertise-address.endpoint: 192.168.49.2:8443
     kubernetes.io/config.hash: f241819aff4d77a34fc71bea1fac9af8
     kubernetes.io/config.mirror: f241819aff4d77a34fc71bea1fac9af8
-    kubernetes.io/config.seen: "2023-09-01T13:06:14.650383257Z"
+    kubernetes.io/config.seen: "2023-11-21T12:47:18.835576995Z"
     kubernetes.io/config.source: file
-  creationTimestamp: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-11-21T12:47:19Z"
   labels:
     component: kube-apiserver
     tier: control-plane
@@ -18,8 +18,8 @@ metadata:
     controller: true
     kind: Node
     name: minikube
-    uid: 7430868f-dbf0-4399-916e-ec5f730ad7fc
-  uid: 5fa627a9-a6d2-40e7-803f-c5f854bb2a58
+    uid: 5daf7154-88fc-40a7-a306-ea507831de30
+  uid: 5ebaffbc-2ef5-4055-b80b-b41fb9c34eab
 spec:
   containers:
   - command:
@@ -147,43 +147,43 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:43Z"
+    lastTransitionTime: "2023-12-21T13:02:09Z"
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:59Z"
+    lastTransitionTime: "2023-12-21T13:02:27Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:59Z"
+    lastTransitionTime: "2023-12-21T13:02:27Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:43Z"
+    lastTransitionTime: "2023-12-21T13:02:09Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: docker://b2e76b01d763d037bb411c9338be1377730f82bbf3d0da4da3b8b47474530d34
+  - containerID: docker://ca466052503bb9a319ea8b5e992a92f8215bd7e2ba097514f4c25c21b863081d
     image: registry.k8s.io/kube-apiserver:v1.27.4
     imageID: docker-pullable://registry.k8s.io/kube-apiserver@sha256:697cd88d94f7f2ef42144cb3072b016dcb2e9251f0e7d41a7fede557e555452d
     lastState:
       terminated:
-        containerID: docker://7cdced6f5d7ac570cee31f88efd14fd916739878549640bbc6dd039dd90bdf80
-        exitCode: 0
-        finishedAt: "2024-01-02T17:23:32Z"
-        reason: Completed
-        startedAt: "2024-01-02T05:30:17Z"
+        containerID: docker://ef2c8b614831b52d5b051cfe637ee65cad9d066ba17d6182b2a9ade088db48a6
+        exitCode: 1
+        finishedAt: "2023-12-21T13:02:01Z"
+        reason: Error
+        startedAt: "2023-12-21T13:01:41Z"
     name: kube-apiserver
     ready: true
-    restartCount: 14
+    restartCount: 21
     started: true
     state:
       running:
-        startedAt: "2024-01-02T17:25:44Z"
+        startedAt: "2023-12-21T13:02:03Z"
   hostIP: 192.168.49.2
   phase: Running
   podIP: 192.168.49.2
   podIPs:
   - ip: 192.168.49.2
   qosClass: Burstable
-  startTime: "2024-01-02T17:25:43Z"
+  startTime: "2023-12-21T13:02:09Z"

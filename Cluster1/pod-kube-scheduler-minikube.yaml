@@ -4,9 +4,9 @@ metadata:
   annotations:
     kubernetes.io/config.hash: eb675835e10503c79265cf0e2983f93c
     kubernetes.io/config.mirror: eb675835e10503c79265cf0e2983f93c
-    kubernetes.io/config.seen: "2023-09-01T13:06:14.650384299Z"
+    kubernetes.io/config.seen: "2023-11-21T12:47:18.835596278Z"
     kubernetes.io/config.source: file
-  creationTimestamp: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-11-21T12:47:19Z"
   labels:
     component: kube-scheduler
     tier: control-plane
@@ -17,8 +17,8 @@ metadata:
     controller: true
     kind: Node
     name: minikube
-    uid: 7430868f-dbf0-4399-916e-ec5f730ad7fc
-  uid: c7acbbe6-e330-47c9-bf8f-c6f189ea561d
+    uid: 5daf7154-88fc-40a7-a306-ea507831de30
+  uid: 6dc00d56-c40b-4768-867c-e62848e09223
 spec:
   containers:
   - command:
@@ -86,43 +86,43 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:43Z"
+    lastTransitionTime: "2023-12-21T13:02:09Z"
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:59Z"
+    lastTransitionTime: "2023-12-21T13:02:17Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:59Z"
+    lastTransitionTime: "2023-12-21T13:02:17Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:25:43Z"
+    lastTransitionTime: "2023-12-21T13:02:09Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: docker://22076edf25dc9206d27f768684c3f448687a629f1697085384c1063460c1f75a
+  - containerID: docker://957b5ca78a7a5e95b8de8962276913e763d5d502c77c447b5d991ce2e84df2e5
     image: registry.k8s.io/kube-scheduler:v1.27.4
     imageID: docker-pullable://registry.k8s.io/kube-scheduler@sha256:5897d7a97d23dce25cbf36fcd6e919180a8ef904bf5156583ffdb6a733ab04af
     lastState:
       terminated:
-        containerID: docker://553323caaf02a535aa7a0c29586444f8805048d5176b40af4b7fbd9b5c697b99
+        containerID: docker://157a4a83371c1f5975948b87f8df87fbe34eab2a6fc5f7bfb9e5e8cb168a8578
         exitCode: 1
-        finishedAt: "2024-01-02T17:23:31Z"
+        finishedAt: "2023-12-21T13:02:01Z"
         reason: Error
-        startedAt: "2024-01-02T05:30:17Z"
+        startedAt: "2023-12-21T13:01:40Z"
     name: kube-scheduler
     ready: true
-    restartCount: 14
+    restartCount: 21
     started: true
     state:
       running:
-        startedAt: "2024-01-02T17:25:44Z"
+        startedAt: "2023-12-21T13:02:03Z"
   hostIP: 192.168.49.2
   phase: Running
   podIP: 192.168.49.2
   podIPs:
   - ip: 192.168.49.2
   qosClass: Burstable
-  startTime: "2024-01-02T17:25:43Z"
+  startTime: "2023-12-21T13:02:09Z"

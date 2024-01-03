@@ -1,0 +1,24 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-03T06:08:43Z"
+deprecatedLastTimestamp: "2024-01-03T06:08:43Z"
+deprecatedSource:
+  component: persistentvolume-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-03T06:08:43Z"
+  name: katafygio.17a6c15f38c91165
+  namespace: default
+  uid: 89e708ad-6306-4715-8642-6494a9746277
+note: waiting for a volume to be created, either by external provisioner "k8s.io/minikube-hostpath"
+  or manually created by system administrator
+reason: ExternalProvisioning
+regarding:
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  name: katafygio
+  namespace: default
+  resourceVersion: "488168"
+  uid: f4bdccc9-18ae-46e5-9e3f-d8fe4963dc98
+type: Normal

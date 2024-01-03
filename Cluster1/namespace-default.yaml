@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   labels:
     kubernetes.io/metadata.name: default
   name: default
-  uid: a69a8da9-c61f-45dd-ba9c-674e26e320b5
+  uid: 6dba6ca2-c024-4eee-b84c-a035c5e1eb01
 spec:
   finalizers:
   - kubernetes

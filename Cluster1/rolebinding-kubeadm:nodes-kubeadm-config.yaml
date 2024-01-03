@@ -1,10 +1,10 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:17Z"
   name: kubeadm:nodes-kubeadm-config
   namespace: kube-system
-  uid: beead112-9854-4c7a-9da9-077b86a39eda
+  uid: 7c63f075-375a-4041-a96a-8dd4f25523e9
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

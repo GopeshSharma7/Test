@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: kube-scheduler
-  uid: 7e8dd357-4dbe-483a-8389-8d550b4c445c
+  uid: e4ce0bc7-6906-4eba-af14-5d52bb43ae10
 spec:
   distinguisherMethod:
     type: ByNamespace
@@ -34,7 +34,7 @@ spec:
         name: system:kube-scheduler
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "workload-high" and it exists
     reason: Found

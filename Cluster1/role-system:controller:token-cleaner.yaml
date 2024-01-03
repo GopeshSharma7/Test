@@ -3,12 +3,12 @@ kind: Role
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     kubernetes.io/bootstrapping: rbac-defaults
   name: system:controller:token-cleaner
   namespace: kube-system
-  uid: c021acf0-c86e-4015-bd01-81f5002879dc
+  uid: fea0a006-dd54-4949-8c6f-aaffd21d8197
 rules:
 - apiGroups:
   - ""

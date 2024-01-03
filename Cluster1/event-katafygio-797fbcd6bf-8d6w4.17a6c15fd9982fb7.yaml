@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-03T06:08:46Z"
+deprecatedLastTimestamp: "2024-01-03T06:08:46Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-03T06:08:46Z"
+  name: katafygio-797fbcd6bf-8d6w4.17a6c15fd9982fb7
+  namespace: default
+  uid: cc333f7a-74f0-4d6b-ae23-8dbc2202ec56
+note: Pulling image "sharmag07/katafygio:k1"
+reason: Pulling
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{katafygio}
+  kind: Pod
+  name: katafygio-797fbcd6bf-8d6w4
+  namespace: default
+  resourceVersion: "488188"
+  uid: 8381d691-6a68-4669-b63e-252036c9a84e
+type: Normal

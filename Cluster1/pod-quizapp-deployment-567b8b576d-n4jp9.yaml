@@ -1,0 +1,118 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2023-11-29T17:25:07Z"
+  generateName: quizapp-deployment-567b8b576d-
+  labels:
+    app: quizapp
+    pod-template-hash: 567b8b576d
+  name: quizapp-deployment-567b8b576d-n4jp9
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: quizapp-deployment-567b8b576d
+    uid: f6b555f1-117a-4e5d-b7d4-7fea904fe5ae
+  uid: b8b0ed13-d410-4b7c-bb22-fb5113f7402b
+spec:
+  containers:
+  - command:
+    - /bin/bash
+    image: trohit7/quizapp:mytagcl
+    imagePullPolicy: IfNotPresent
+    name: quizapp
+    ports:
+    - containerPort: 80
+      protocol: TCP
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    tty: true
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-vkstq
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: kube-api-access-vkstq
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-11-29T17:25:07Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-12-19T05:06:34Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-12-19T05:06:34Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-11-29T17:25:07Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://26007637b18e1d927c750c6e720f1e602dc1c51decafeca6bd7a9edafb831776
+    image: trohit7/quizapp:mytagcl
+    imageID: docker-pullable://trohit7/quizapp@sha256:f784cafe4d9bc4193e2a890718fbdc0f23ec23d5360a8c28cac2069cb3e288ee
+    lastState:
+      terminated:
+        containerID: docker://d5ed7a8d8a4652f8b85fc0d403d38660077d81378ebe12b1aa1c297f976e8549
+        exitCode: 137
+        finishedAt: "2023-12-21T13:01:27Z"
+        reason: Error
+        startedAt: "2023-12-19T05:06:33Z"
+    name: quizapp
+    ready: true
+    restartCount: 5
+    started: true
+    state:
+      running:
+        startedAt: "2023-12-21T13:01:46Z"
+  hostIP: 192.168.49.2
+  phase: Running
+  podIP: 10.244.1.230
+  podIPs:
+  - ip: 10.244.1.230
+  qosClass: BestEffort
+  startTime: "2023-11-29T17:25:07Z"

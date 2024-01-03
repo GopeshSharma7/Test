@@ -1,10 +1,10 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:17Z"
   name: kubeadm:kubelet-config
   namespace: kube-system
-  uid: 924afb0d-7098-4741-89f2-8d95fafa641f
+  uid: b802bd8a-a3ef-4226-ad81-8bb3c42a86dc
 rules:
 - apiGroups:
   - ""

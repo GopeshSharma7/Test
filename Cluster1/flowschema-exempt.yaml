@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: exempt
-  uid: 03dc5fd1-2a25-4c38-8c21-ef257d8ed4b1
+  uid: a7859570-4d19-4e9b-8cf7-321e9d3d7d28
 spec:
   matchingPrecedence: 1
   priorityLevelConfiguration:
@@ -32,7 +32,7 @@ spec:
       kind: Group
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "exempt" and it exists
     reason: Found

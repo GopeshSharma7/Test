@@ -4,10 +4,8 @@ metadata:
   annotations:
     deployment.kubernetes.io/desired-replicas: "1"
     deployment.kubernetes.io/max-replicas: "1"
-    deployment.kubernetes.io/revision: "2"
-    meta.helm.sh/release-name: katafygio
-    meta.helm.sh/release-namespace: default
-  creationTimestamp: "2024-01-02T16:14:49Z"
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2024-01-03T06:08:43Z"
   labels:
     app: katafygio
     chart: katafygio-0.5.1
@@ -22,8 +20,8 @@ metadata:
     controller: true
     kind: Deployment
     name: katafygio
-    uid: d71f94ac-73a0-4630-a57c-701d904e3f73
-  uid: 2b3fff8c-d2d1-400f-9288-aad18298d091
+    uid: 2a60dae1-3609-4f69-974a-5632539eed6a
+  uid: f02db8b6-9ff9-47c7-84e9-a19fbad06f3a
 spec:
   replicas: 1
   selector:

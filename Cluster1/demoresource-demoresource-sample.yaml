@@ -1,0 +1,15 @@
+apiVersion: juniper.testkatafygio.juniper/v1
+kind: DemoResource
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"juniper.testkatafygio.juniper/v1","kind":"DemoResource","metadata":{"annotations":{},"name":"demoresource-sample","namespace":"default"},"spec":{"name":"app","namespace":"default"}}
+  creationTimestamp: "2023-11-30T06:18:25Z"
+  name: demoresource-sample
+  namespace: default
+  uid: 4dfd09e8-c07f-48c1-a36c-ceb66ea1b270
+spec:
+  name: app
+  namespace: default
+status:
+  name: app

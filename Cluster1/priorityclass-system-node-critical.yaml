@@ -3,8 +3,8 @@ description: Used for system critical pods that must not be moved from their cur
   node.
 kind: PriorityClass
 metadata:
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: system-node-critical
-  uid: c2d7db9a-bd71-4aa5-a84d-b728031e573a
+  uid: fcae500b-0bb7-42fa-bd45-af09350a5fc5
 preemptionPolicy: PreemptLowerPriority
 value: 2000001000

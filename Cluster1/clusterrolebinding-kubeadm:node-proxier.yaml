@@ -1,9 +1,9 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  creationTimestamp: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-11-21T12:47:18Z"
   name: kubeadm:node-proxier
-  uid: a64b43f1-c884-4a19-9efc-8e0cdef74ea2
+  uid: 740e2497-1272-4dbc-95fc-2fa2539da92d
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

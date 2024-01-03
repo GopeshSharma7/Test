@@ -1,0 +1,25 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 5969
+deprecatedFirstTimestamp: "2023-12-21T13:04:36Z"
+deprecatedLastTimestamp: "2024-01-03T06:07:12Z"
+deprecatedSource:
+  component: kubelet
+  host: minikube
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-03T04:50:46Z"
+  name: crdstesting-controller-manager-595f599f59-8xm25.17a2da858f9ca806
+  namespace: crdstesting-system
+  uid: 253af430-c7f2-4a5b-808c-f30bd63f90a8
+note: Back-off restarting failed container manager in pod crdstesting-controller-manager-595f599f59-8xm25_crdstesting-system(116ed313-6135-4d65-80db-764194f2e9ac)
+reason: BackOff
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{manager}
+  kind: Pod
+  name: crdstesting-controller-manager-595f599f59-8xm25
+  namespace: crdstesting-system
+  resourceVersion: "370719"
+  uid: 116ed313-6135-4d65-80db-764194f2e9ac
+type: Warning

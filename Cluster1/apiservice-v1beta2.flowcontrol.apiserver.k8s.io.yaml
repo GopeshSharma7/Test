@@ -1,11 +1,11 @@
 apiVersion: apiregistration.k8s.io/v1
 kind: APIService
 metadata:
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:14Z"
   labels:
     kube-aggregator.kubernetes.io/automanaged: onstart
   name: v1beta2.flowcontrol.apiserver.k8s.io
-  uid: feba518b-b738-4aca-9b0b-46501c3e7f64
+  uid: aeb54acb-710c-49a1-b5af-d6f38027b116
 spec:
   group: flowcontrol.apiserver.k8s.io
   groupPriorityMinimum: 16100
@@ -13,7 +13,7 @@ spec:
   versionPriority: 15
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:14Z"
     message: Local APIServices are always available
     reason: Local
     status: "True"

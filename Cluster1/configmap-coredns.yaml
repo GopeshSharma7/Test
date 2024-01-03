@@ -28,7 +28,7 @@ data:
     }
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-11-21T12:47:18Z"
   name: coredns
   namespace: kube-system
-  uid: 073bf78d-1caa-4b74-b4f5-46926bd15414
+  uid: 882c4bc9-305d-44b1-9455-298baa8b7af4

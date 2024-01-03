@@ -3,11 +3,11 @@ kind: ClusterRole
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     kubernetes.io/bootstrapping: rbac-defaults
   name: system:controller:endpointslicemirroring-controller
-  uid: 26f70b61-41ec-4b85-a770-ea3f1b8ea75d
+  uid: 71f80043-5659-41a5-9d0d-6d3a93a23ee1
 rules:
 - apiGroups:
   - ""

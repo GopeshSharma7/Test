@@ -1,0 +1,204 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubectl.kubernetes.io/default-container: manager
+  creationTimestamp: "2023-11-30T06:21:47Z"
+  generateName: crdstesting-controller-manager-595f599f59-
+  labels:
+    control-plane: controller-manager
+    pod-template-hash: 595f599f59
+  name: crdstesting-controller-manager-595f599f59-8xm25
+  namespace: crdstesting-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: crdstesting-controller-manager-595f599f59
+    uid: 9604aa84-fea7-4334-8fee-85341c7b03fb
+  uid: 116ed313-6135-4d65-80db-764194f2e9ac
+spec:
+  containers:
+  - args:
+    - --secure-listen-address=0.0.0.0:8443
+    - --upstream=http://127.0.0.1:8080/
+    - --logtostderr=true
+    - --v=0
+    image: gcr.io/kubebuilder/kube-rbac-proxy:v0.14.1
+    imagePullPolicy: IfNotPresent
+    name: kube-rbac-proxy
+    ports:
+    - containerPort: 8443
+      name: https
+      protocol: TCP
+    resources:
+      limits:
+        cpu: 500m
+        memory: 128Mi
+      requests:
+        cpu: 5m
+        memory: 64Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-kc64h
+      readOnly: true
+  - args:
+    - --health-probe-bind-address=:8081
+    - --metrics-bind-address=127.0.0.1:8080
+    - --leader-elect
+    command:
+    - /manager
+    image: trohit7/controller:latest2
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8081
+        scheme: HTTP
+      initialDelaySeconds: 15
+      periodSeconds: 20
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: manager
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /readyz
+        port: 8081
+        scheme: HTTP
+      initialDelaySeconds: 5
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: 500m
+        memory: 128Mi
+      requests:
+        cpu: 10m
+        memory: 64Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-kc64h
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    runAsNonRoot: true
+  serviceAccount: crdstesting-controller-manager
+  serviceAccountName: crdstesting-controller-manager
+  terminationGracePeriodSeconds: 10
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: kube-api-access-kc64h
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-11-30T06:21:47Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-03T06:06:35Z"
+    message: 'containers with unready status: [manager]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2024-01-03T06:06:35Z"
+    message: 'containers with unready status: [manager]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-11-30T06:21:47Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://14b3fd911acf338c13c139f992c01f83ab512cd5feba267ef3c4cb7884449918
+    image: gcr.io/kubebuilder/kube-rbac-proxy:v0.14.1
+    imageID: docker-pullable://gcr.io/kubebuilder/kube-rbac-proxy@sha256:928e64203edad8f1bba23593c7be04f0f8410c6e4feb98d9e9c2d00a8ff59048
+    lastState:
+      terminated:
+        containerID: docker://9e65077085aa5e213fb7b54557ddba946aa1234c7fe65c2494379de67c51187a
+        exitCode: 0
+        finishedAt: "2023-12-21T13:01:20Z"
+        reason: Completed
+        startedAt: "2023-12-19T05:06:34Z"
+    name: kube-rbac-proxy
+    ready: true
+    restartCount: 4
+    started: true
+    state:
+      running:
+        startedAt: "2023-12-21T13:01:46Z"
+  - containerID: docker://061705a4e367924c7fa1e42839da7a913c897d1335c707f88521369b751c3b70
+    image: trohit7/controller:latest2
+    imageID: docker-pullable://trohit7/controller@sha256:1c2931749ce9ab34e8791b80b293da03ffd5a73e24d1ba97b4e00ac95bd63141
+    lastState:
+      terminated:
+        containerID: docker://061705a4e367924c7fa1e42839da7a913c897d1335c707f88521369b751c3b70
+        exitCode: 1
+        finishedAt: "2024-01-03T06:06:34Z"
+        reason: Error
+        startedAt: "2024-01-03T06:04:18Z"
+    name: manager
+    ready: false
+    restartCount: 931
+    started: false
+    state:
+      waiting:
+        message: back-off 5m0s restarting failed container=manager pod=crdstesting-controller-manager-595f599f59-8xm25_crdstesting-system(116ed313-6135-4d65-80db-764194f2e9ac)
+        reason: CrashLoopBackOff
+  hostIP: 192.168.49.2
+  phase: Running
+  podIP: 10.244.1.228
+  podIPs:
+  - ip: 10.244.1.228
+  qosClass: Burstable
+  startTime: "2023-11-30T06:21:47Z"

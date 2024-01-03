@@ -1,0 +1,20 @@
+apiVersion: apiregistration.k8s.io/v1
+kind: APIService
+metadata:
+  creationTimestamp: "2023-11-30T06:15:41Z"
+  labels:
+    kube-aggregator.kubernetes.io/automanaged: "true"
+  name: v1.juniper.testkatafygio.juniper
+  uid: f0cc51a4-b4d5-4d38-bfd7-46235b9d4ed1
+spec:
+  group: juniper.testkatafygio.juniper
+  groupPriorityMinimum: 1000
+  version: v1
+  versionPriority: 100
+status:
+  conditions:
+  - lastTransitionTime: "2023-11-30T06:15:41Z"
+    message: Local APIServices are always available
+    reason: Local
+    status: "True"
+    type: Available

@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: endpoint-controller
-  uid: c83abcfa-5dc0-4a2b-829e-f04c70bb2d9c
+  uid: 673281dc-a738-4b41-bada-20c83404351e
 spec:
   distinguisherMethod:
     type: ByUser
@@ -38,7 +38,7 @@ spec:
         namespace: kube-system
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "workload-high" and it exists
     reason: Found

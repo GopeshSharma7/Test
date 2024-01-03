@@ -1,0 +1,23 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-03T06:08:43Z"
+deprecatedLastTimestamp: "2024-01-03T06:08:43Z"
+deprecatedSource:
+  component: k8s.io/minikube-hostpath_minikube_2ea665be-257e-4168-b993-4d9f52b0ef5b
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-03T06:08:43Z"
+  name: katafygio.17a6c15f3d9e8ba6
+  namespace: default
+  uid: 406f67a3-a26b-442c-99fb-2e1b702a57e8
+note: Successfully provisioned volume pvc-f4bdccc9-18ae-46e5-9e3f-d8fe4963dc98
+reason: ProvisioningSucceeded
+regarding:
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  name: katafygio
+  namespace: default
+  resourceVersion: "488168"
+  uid: f4bdccc9-18ae-46e5-9e3f-d8fe4963dc98
+type: Normal

@@ -1,0 +1,23 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2024-01-03T06:08:43Z"
+deprecatedLastTimestamp: "2024-01-03T06:08:43Z"
+deprecatedSource:
+  component: k8s.io/minikube-hostpath_minikube_2ea665be-257e-4168-b993-4d9f52b0ef5b
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2024-01-03T06:08:43Z"
+  name: katafygio.17a6c15f39088290
+  namespace: default
+  uid: 0f134d2f-cb9d-4258-ba53-14802a961f3c
+note: External provisioner is provisioning volume for claim "default/katafygio"
+reason: Provisioning
+regarding:
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  name: katafygio
+  namespace: default
+  resourceVersion: "488168"
+  uid: f4bdccc9-18ae-46e5-9e3f-d8fe4963dc98
+type: Normal

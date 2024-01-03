@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:14Z"
   labels:
     kubernetes.io/metadata.name: kube-public
   name: kube-public
-  uid: feb92d90-f963-42d0-a812-5fa72a4e4f50
+  uid: 5dffa55a-6d28-4bf4-91c5-a34ef68a566f
 spec:
   finalizers:
   - kubernetes

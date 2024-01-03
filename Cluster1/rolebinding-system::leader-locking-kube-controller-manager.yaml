@@ -3,12 +3,12 @@ kind: RoleBinding
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  creationTimestamp: "2023-09-01T13:06:13Z"
+  creationTimestamp: "2023-11-21T12:47:16Z"
   labels:
     kubernetes.io/bootstrapping: rbac-defaults
   name: system::leader-locking-kube-controller-manager
   namespace: kube-system
-  uid: 0220ee93-6f1a-44f0-8225-350fa3a8a165
+  uid: eaae2f90-d1a0-4bd2-8ee4-e49cfebe2941
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

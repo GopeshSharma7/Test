@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:14Z"
   labels:
     kubernetes.io/metadata.name: kube-system
   name: kube-system
-  uid: 44b967bc-e10c-4236-8e55-31fb3503f8d7
+  uid: 97876a03-05d2-4cbb-8623-6e98cc908739
 spec:
   finalizers:
   - kubernetes

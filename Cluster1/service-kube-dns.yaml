@@ -4,14 +4,14 @@ metadata:
   annotations:
     prometheus.io/port: "9153"
     prometheus.io/scrape: "true"
-  creationTimestamp: "2023-09-01T13:06:14Z"
+  creationTimestamp: "2023-11-21T12:47:18Z"
   labels:
     k8s-app: kube-dns
     kubernetes.io/cluster-service: "true"
     kubernetes.io/name: CoreDNS
   name: kube-dns
   namespace: kube-system
-  uid: f139db12-6cd1-4b4f-bb76-6719eaa1fdd9
+  uid: 2d4acee4-5535-4eee-983a-8d45d9a7bf06
 spec:
   clusterIP: 10.96.0.10
   clusterIPs:

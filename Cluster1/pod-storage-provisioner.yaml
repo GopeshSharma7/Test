@@ -4,13 +4,13 @@ metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"addonmanager.kubernetes.io/mode":"Reconcile","integration-test":"storage-provisioner"},"name":"storage-provisioner","namespace":"kube-system"},"spec":{"containers":[{"command":["/storage-provisioner"],"image":"gcr.io/k8s-minikube/storage-provisioner:v5","imagePullPolicy":"IfNotPresent","name":"storage-provisioner","volumeMounts":[{"mountPath":"/tmp","name":"tmp"}]}],"hostNetwork":true,"serviceAccountName":"storage-provisioner","volumes":[{"hostPath":{"path":"/tmp","type":"Directory"},"name":"tmp"}]}}
-  creationTimestamp: "2023-09-01T13:06:15Z"
+  creationTimestamp: "2023-11-21T12:47:22Z"
   labels:
     addonmanager.kubernetes.io/mode: Reconcile
     integration-test: storage-provisioner
   name: storage-provisioner
   namespace: kube-system
-  uid: b8752c01-94b9-43ef-ba2a-e0ffc8a001a1
+  uid: 3fc6048a-9d59-4f16-b885-e41f8c541ca6
 spec:
   containers:
   - command:
@@ -25,7 +25,7 @@ spec:
     - mountPath: /tmp
       name: tmp
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-tt7dw
+      name: kube-api-access-6slpg
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
@@ -53,7 +53,7 @@ spec:
       path: /tmp
       type: Directory
     name: tmp
-  - name: kube-api-access-tt7dw
+  - name: kube-api-access-6slpg
     projected:
       defaultMode: 420
       sources:
@@ -74,43 +74,43 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-09-01T13:06:27Z"
+    lastTransitionTime: "2023-11-21T12:47:30Z"
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:26:32Z"
+    lastTransitionTime: "2024-01-03T04:45:37Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-02T17:26:32Z"
+    lastTransitionTime: "2024-01-03T04:45:37Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
-    lastTransitionTime: "2023-09-01T13:06:27Z"
+    lastTransitionTime: "2023-11-21T12:47:30Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: docker://0a171ec4375422ac47b1aaa51cd90245636858c1341c5837c89d7742eebe1972
+  - containerID: docker://4028ffb34c3cb79d66dd8e4f87736cb694c2377ec855404d7a706953975dba9f
     image: gcr.io/k8s-minikube/storage-provisioner:v5
     imageID: docker-pullable://gcr.io/k8s-minikube/storage-provisioner@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944
     lastState:
       terminated:
-        containerID: docker://16e1c0d6b37212574c7bd1a265e9a86a640bc24b133c9c5637667c2b2c4aa0e8
-        exitCode: 1
-        finishedAt: "2024-01-02T17:26:19Z"
+        containerID: docker://6ce7a352f0812aba83965da0df6845f66cb2296563d61282a76d8830bd726ba7
+        exitCode: 255
+        finishedAt: "2024-01-03T04:45:23Z"
         reason: Error
-        startedAt: "2024-01-02T17:25:49Z"
+        startedAt: "2024-01-03T04:44:10Z"
     name: storage-provisioner
     ready: true
-    restartCount: 25
+    restartCount: 96
     started: true
     state:
       running:
-        startedAt: "2024-01-02T17:26:31Z"
+        startedAt: "2024-01-03T04:45:36Z"
   hostIP: 192.168.49.2
   phase: Running
   podIP: 192.168.49.2
   podIPs:
   - ip: 192.168.49.2
   qosClass: BestEffort
-  startTime: "2023-09-01T13:06:27Z"
+  startTime: "2023-11-21T12:47:30Z"

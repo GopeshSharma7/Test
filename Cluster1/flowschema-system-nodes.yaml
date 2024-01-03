@@ -3,9 +3,9 @@ kind: FlowSchema
 metadata:
   annotations:
     apf.kubernetes.io/autoupdate-spec: "true"
-  creationTimestamp: "2023-09-01T13:06:12Z"
+  creationTimestamp: "2023-11-21T12:47:15Z"
   name: system-nodes
-  uid: 4a3e22d0-6d43-4973-945a-474be6505f94
+  uid: 09c77e7b-f6ac-4cbf-b9da-e8792c0e63a7
 spec:
   distinguisherMethod:
     type: ByUser
@@ -34,7 +34,7 @@ spec:
       kind: Group
 status:
   conditions:
-  - lastTransitionTime: "2023-09-01T13:06:12Z"
+  - lastTransitionTime: "2023-11-21T12:47:15Z"
     message: This FlowSchema references the PriorityLevelConfiguration object named
       "system" and it exists
     reason: Found
