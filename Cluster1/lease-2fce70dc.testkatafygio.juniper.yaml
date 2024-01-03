@@ -6,8 +6,8 @@ metadata:
   namespace: crdstesting-system
   uid: 2bce6010-bc08-468a-9056-0cafcd2e52dd
 spec:
-  acquireTime: "2024-01-03T06:04:34.574944Z"
-  holderIdentity: crdstesting-controller-manager-595f599f59-8xm25_7b7f1079-f69e-46a4-a17f-44cee2e76ec3
+  acquireTime: "2024-01-03T06:12:03.472915Z"
+  holderIdentity: crdstesting-controller-manager-595f599f59-8xm25_eef83366-d107-4278-bac2-be09721f5309
   leaseDurationSeconds: 15
-  leaseTransitions: 931
-  renewTime: "2024-01-03T06:06:33.410683Z"
+  leaseTransitions: 932
+  renewTime: "2024-01-03T06:12:09.507885Z"
