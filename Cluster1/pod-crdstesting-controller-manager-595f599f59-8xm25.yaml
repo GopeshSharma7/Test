@@ -144,16 +144,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-03T06:06:35Z"
-    message: 'containers with unready status: [manager]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2024-01-03T06:11:55Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2024-01-03T06:06:35Z"
-    message: 'containers with unready status: [manager]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2024-01-03T06:11:55Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-11-30T06:21:47Z"
@@ -188,7 +184,7 @@ status:
         reason: Error
         startedAt: "2024-01-03T06:04:18Z"
     name: manager
-    ready: false
+    ready: true
     restartCount: 932
     started: true
     state:

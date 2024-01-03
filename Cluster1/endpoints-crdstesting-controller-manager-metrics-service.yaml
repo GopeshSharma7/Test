@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Endpoints
 metadata:
   annotations:
-    endpoints.kubernetes.io/last-change-trigger-time: "2024-01-03T06:06:35Z"
+    endpoints.kubernetes.io/last-change-trigger-time: "2024-01-03T06:11:55Z"
   creationTimestamp: "2023-11-30T06:21:47Z"
   labels:
     app.kubernetes.io/component: kube-rbac-proxy
@@ -16,7 +16,7 @@ metadata:
   namespace: crdstesting-system
   uid: ccbcaff8-88c1-4e16-840e-478adec3c499
 subsets:
-- notReadyAddresses:
+- addresses:
   - ip: 10.244.1.228
     nodeName: minikube
     targetRef:
